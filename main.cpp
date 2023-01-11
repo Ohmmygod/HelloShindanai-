@@ -2,9 +2,6 @@
 #include <string>
 #include <iomanip>
 #include <stdlib.h>
-#include <chrono>
-#include <thread>
-
 
 using namespace std;
 
@@ -57,9 +54,10 @@ int main() {
                         break;
                     case 'e':
                     case 'E':
-                        cout << "Thank you for playing through! Have a nice day!" << endl;
-                        system("pause");
-                        return 0;
+                           cout << "Thank you for playing through! Have a nice day!" << endl;
+                           cin.get();
+                           cin.get();
+                           break;
                     default:
                         cout << endline << endl << endl;
                         cout << error << endl;
@@ -73,7 +71,10 @@ int main() {
             }
              else if (start_key == "Exit" || start_key == "exit")
              {
-              break;
+                cout << "Thank you for playing through! Have a nice day!" << endl;
+                cin.get();
+                cin.get();
+                break;
              }
              else {
                  cout << error << endl << endl;
@@ -81,7 +82,7 @@ int main() {
 
         } while (start_key != "E" || start_key != "e");
 
-    cout << "Thank you for playing through! Have a nice day!" << endl;
     return 0;
+
 
 }
